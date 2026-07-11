@@ -5,7 +5,7 @@ import axios from "axios";
 import { Reveal } from "@/components/ui/Reveal";
 import { ProjectModal } from "./ProjectModal";
 
-const API = "http://localhost:5000";
+const API = "https://baalaconstruction.onrender.com";
 
 export function CompletedProjects() {
   const [projects, setProjects] = useState<any[]>([]);

@@ -18,7 +18,7 @@ export const Route = createFileRoute("/admin/projects")({
   component: ProjectsAdmin,
 });
 
-const API = "http://localhost:5000";
+const API = "https://baalaconstruction.onrender.com";
 
 function ProjectsAdmin() {
   const [projects, setProjects] = useState<any[]>([]);
