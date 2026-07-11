@@ -1,0 +1,14 @@
+require("dotenv").config();
+
+const cloudinary = require("./config/cloudinary");
+
+cloudinary.api
+  .ping()
+  .then((res) => {
+    console.log("CONNECTED");
+    console.log(res);
+  })
+  .catch((err) => {
+    console.log("ERROR");
+    console.log(err);
+  });
